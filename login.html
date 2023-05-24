@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">  
+    <title>Đăng nhập</title>
+    <style>
+       .thuonghieu
+        {
+            height: 100px;
+            background-color:#FBBBB9;
+        }
+        .thuonghieu img
+        {
+            margin-left: auto;
+            margin-right:auto;
+            display: block;
+            width:100px;
+        }
+        .topnav
+        {
+            background-color: lightskyblue;
+            overflow: hidden ;
+            margin-bottom:30px;
+            justify-content: center;
+            display: flex;
+        }
+        .topnav a{
+            float : left ;
+            color : black ;
+            text-align: center;
+            padding: 10px 60px;
+            text-decoration: none;
+            font-size: 17px ;
+        }
+        .topnav a:hover{
+            background-color:#ddd; ;
+            color: black ;
+        }
+        .dangnhap
+        {
+            width:500px;
+            height:500px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            padding-left:10px;
+            border: 1px solid black;
+            margin-bottom: 50px;
+        }
+        .dangnhap h2
+        {
+            font-size: 25px;
+        }
+        .dangnhap h4
+        {
+            font-size: 15px;
+            font-weight: normal;
+        }
+        .dangnhap input.text
+        {
+            width:481px;
+            height:30px;
+        }
+        .otherapp
+        {
+            padding-left:200px;
+        }
+        .otherapp img
+        {
+            width: 30px;
+            float:left;
+            margin-right:20px;
+        }
+
+        .cuoi
+        {
+            background-color: #696969;
+            height: 300px;
+            width: 100%;
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+        }
+        .cuoi .left{
+            margin-top:50px;    
+            border-top: none;
+            border-bottom: none;
+            width:50%;
+            height: 300px;
+            float:left;
+        }
+        .cuoi .right
+        {
+            margin-top:50px;
+            border-top: none;
+            border-bottom: none;
+            width:50%;
+            height: 300px;
+            float:right; 
+            
+        }
+        .cuoi img
+        {
+            
+            border-top: none;
+            border-bottom: none;
+            width:100px;
+        }
+        .cuoi ul li
+        {
+            list-style-type: none  ;
+            font-size: 20px;
+        }
+        .cuoi .right a 
+        {
+            padding-left:50px;
+            text-decoration: none;
+            font-size: 20px;
+            margin-bottom:10px;
+            text-align: center;
+        }
+        .dropdown 
+        {
+            display: none;
+        }
+        @media screen and (max-width: 1211px) and (min-width:924px) {
+            .thuonghieu
+            {
+                width:auto;
+                height: 100px;
+            }
+            .topnav
+            {
+            display: none;
+            }
+            .thanh
+            {
+                width: auto;
+                background-color: lightskyblue;
+                height: 60px;
+                margin-bottom: 30px;
+            }
+            .dropbtn {
+            background-color: lightskyblue;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+  
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover 
+{
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}    
+    }
+    </style>
+</head>
+<body>
+    <div class="thuonghieu">
+        <a href="trangchu.html"><img src="logo.jpg"></a> 
+        
+</div>
+
+<div class="topnav">
+    <a href="trangchu.html">Trang chủ</a>
+    <a href="all.html">Tất cả sản phẩm</a>
+    <a href="login.html">Đăng nhập</a>
+    <a href="support.html">Hỗ trợ khách hàng</a>
+    <a href="gioithieu.html">Giới thiệu</a>
+    <a href="giohang.html">Giỏ hàng</a>  
+</div>
+<div class="thanh">
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="trangchu.html">Trang chủ</a>
+            <a href="all.html">Tất cả sản phẩm</a>
+            <a href="login.html">Đăng nhập</a>
+            <a href="support.html">Hỗ trợ khách hàng</a>
+            <a href="gioithieu.html">Giới thiệu</a>
+            <a href="giohang.html">Giỏ hàng</a>  
+        </div>
+      </div>
+    </div>
+
+    <div class="dangnhap">
+        <h2>Đăng nhập</h2>
+        <form action="login.html">
+            <h4>Email</h4>
+            <input type="text" class ="text" ><br>
+            <h4>Mật khẩu</h4>
+            <input type="text" class ="text" > <br> <br>
+            <a href="forgetpassword.html"">Quên mật khẩu?</a><br><br>
+            <input type="submit" value="Đăng nhập"> 
+        </form>
+        <br>
+        <a href="dangky.html">Tạo tài khoản</a><br>
+        <p style="text-align: center;">Đăng nhập bằng cách khác</p>
+        <div class = "otherapp">
+            <a href ="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&response_type=code&client_id=761031072554-6iv1sd4qg768ov5l30b11mutovd7rj1l.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fapps.hiko.link%2Fadmin%2Fcallback&state=00fe68b749eb39b20866&service=lso&o2v=2&flowName=GeneralOAuthFlow"><img src="gg.jpg"></a>
+            <a href ="https://www.facebook.com/login.php?skip_api_login=1&api_key=144089350556876&kid_directed_site=0&app_id=144089350556876&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv10.0%2Fdialog%2Foauth%3Fresponse_type%3Dcode%26client_id%3D144089350556876%26redirect_uri%3Dhttps%253A%252F%252Fapps.hiko.link%252Fadmin%252Fcallback%26scope%3Demail%26state%3Dff576f0c7e41b7c2c5d2%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D4094f2c8-5435-4015-8fa7-546def8d0f6b%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fapps.hiko.link%2Fadmin%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Dff576f0c7e41b7c2c5d2%23_%3D_&display=page&locale=vi_VN&pl_dbl=0"><img src="fb.jpg"></a>
+        </div>
+    </div>
+
+    
+    <div class="cuoi">
+        <div class="cuoi left">
+            <ul>
+                <li><a href="trangchu.html"><img src="logo.jpg"></a></li>
+                <li><p>Địa chỉ: 118 Nguyễn Thị Định, Tuy Hòa, Phú Yên </p></li>
+                <li><p>SĐT: 0375-766-039</p></li>
+                <li><p>Email: acebakery.py@gmail.com</p></li>
+            </ul>
+            
+        </div>
+         <div class="cuoi right">
+        <p><a href="trangchu.html">Trang chủ</a></p>
+       <p><a href="all.html">Tất cả sản phẩm</a></p> 
+       <p><a href="login.html">Đăng nhập</a></p>
+       <p> <a href="support.html">Hỗ trợ khách hàng</a></p>
+       <p> <a href="gioithieu.html">Liên hệ</a></p>
+       <p> <a href="giohang.html">Giỏ hàng</a></p>
+    </div>
+    </div>
+</body>
+</html>
